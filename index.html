@@ -54,37 +54,38 @@
     </script>
 </head>
 <body>
-<!-- Всплывающая кнопка WhatsApp -->
+<!-- Floating WhatsApp Button -->
 <style>
-  .whatsapp-button {
+  .whatsapp-float {
     position: fixed;
-    left: 20px;
+    right: 20px; /* Позиционирование справа */
     bottom: 20px;
-    background-color: #25d366;
+    background-color: #25D366;
     color: white;
-    padding: 15px 20px;
+    padding: 14px 20px;
     border-radius: 50px;
     text-decoration: none;
     font-size: 16px;
-    z-index: 1000;
+    font-weight: bold;
     display: flex;
     align-items: center;
-    transition: background-color 0.3s ease;
+    z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
   }
 
-  .whatsapp-button:hover {
-    background-color: #1ebf56;
+  .whatsapp-float:hover {
+    background-color: #1EBF56;
   }
 
-  .whatsapp-button img {
-    width: 24px;
-    height: 24px;
+  .whatsapp-float img {
+    width: 26px;
+    height: 26px;
     margin-right: 10px;
   }
 </style>
 
-<a href="https://wa.me/ 995558242910" target="_blank" class="whatsapp-button">
+<a href="https://wa.me/995558242910 " target="_blank" class="whatsapp-float">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg " alt="WhatsApp">
   Написать в WhatsApp
 </a>
