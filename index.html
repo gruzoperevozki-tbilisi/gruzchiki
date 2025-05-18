@@ -57,11 +57,11 @@
 <!-- Подключение Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css ">
 
-<!-- Telegram Floating Button -->
+<!-- Telegram Floating Button (слева) -->
 <style>
-  .telegram-float {
+  .telegram-float-left {
     position: fixed;
-    right: 20px;
+    left: 20px;
     bottom: 20px;
     width: 50px;
     height: 50px;
@@ -78,13 +78,13 @@
     animation: bounce 2s ease infinite;
   }
 
-  .telegram-float:hover {
-    transform: translateX(-5px);
+  .telegram-float-left:hover {
+    transform: translateX(5px);
   }
 
-  .telegram-tooltip {
+  .telegram-tooltip-left {
     position: fixed;
-    right: 80px;
+    left: 80px;
     bottom: 25px;
     background-color: #0088cc;
     color: white;
@@ -98,18 +98,18 @@
     z-index: 999;
   }
 
-  .telegram-tooltip::after {
+  .telegram-tooltip-left::after {
     content: '';
     position: absolute;
     top: 50%;
-    right: -6px;
+    left: -6px;
     transform: translateY(-50%);
     border-width: 6px;
     border-style: solid;
-    border-color: #0088cc #0088cc #0088cc transparent;
+    border-color: #0088cc transparent #0088cc #0088cc;
   }
 
-  .telegram-float:hover + .telegram-tooltip {
+  .telegram-float-left:hover + .telegram-tooltip-left {
     opacity: 1;
     visibility: visible;
   }
@@ -125,10 +125,10 @@
 
   /* Мобильная адаптация */
   @media (max-width: 768px) {
-    .telegram-tooltip {
+    .telegram-tooltip-left {
       display: none;
     }
-    .telegram-float {
+    .telegram-float-left {
       width: 50px;
       height: 50px;
       font-size: 22px;
@@ -137,10 +137,10 @@
 </style>
 
 <!-- HTML элементы -->
-<a href="https://t.me/vash_username " target="_blank" class="telegram-float" title="Написать в Telegram">
+<a href="https://t.me/vash_username " target="_blank" class="telegram-float-left" title="Написать в Telegram">
   <i class="fab fa-telegram-plane"></i>
 </a>
-<div class="telegram-tooltip">@vash_username<br>+7 (XXX) XXX-XX-XX</div>
+<div class="telegram-tooltip-left">@Allrttt<br>+995 558 242 910</div>
     
 <!-- Floating WhatsApp Button -->
 <style>
