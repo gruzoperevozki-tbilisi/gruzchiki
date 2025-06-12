@@ -924,23 +924,32 @@ html {
     margin-bottom: 32px;
 }
 .hero-btn-wrap {
-    margin-top: 60px;
+  margin-top: 30px;
 }
+
 .hero-btn {
-    color: #191919;
-    background-color: #fff;
-    letter-spacing: 1px;
-    padding: 8px 45px;
-    display: inline-block;
-    border: 2px solid #fff;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007BFF;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
 }
-.hero-btn:hover,
-.hero-btn:focus {
-    color: #fff;
-    background-color: transparent;
-    border-radius: 5px;
+
+.hero-btn:hover {
+  background-color: #0056b3;
+}
+
+.secondary-btn {
+  background-color: #25D366;
+}
+
+.secondary-btn:hover {
+  background-color: #1EBF56;
 }
 /*hero-slider*/
 .hero-slider {
